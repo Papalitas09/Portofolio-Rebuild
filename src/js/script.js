@@ -1,43 +1,33 @@
-//Navbar buttons
-let Buttons = [
-    document.getElementById("Home"),
-    document.getElementById("About"),
-    document.getElementById("Project"),
-    document.getElementById("Contact")
-]
-//content
-let Content = [
-    document.getElementById("Home-Content"),
-    document.getElementById("About-Content"),
-    document.getElementById("Project-Content"),
-    document.getElementById("Contact-Content")
-]
+function showSection(sectionId) {
+  const sections = ['Home-Content', 'About-Content', 'Project-Content', 'Contact-Content'];
+  sections.forEach(id => {
+    const el = document.getElementById(id); //ngambil id dari var sections
+    if (el) {
+      el.classList.add('hidden'); //hiddenin semua div
+    }
+  });
 
-Home()
-function Home(){
-    Content[0].style.visibility = "visible"
-    Content[1].style.visibility = "hidden"
-    Content[2].style.visibility = "hidden"
-    Content[3].style.visibility = "hidden"
+  const target = document.getElementById(sectionId); //ambil ud dari parameter function
+  if (target) {
+    target.classList.remove('hidden'); //rmove property hidden di element id
+  }
+}
+// Home()
+// About()
+// Project();
+Contact();
+function Home() {
+  showSection('Home-Content');
 }
 
-function About(){
-    Content[1].style.visibility = "visible"
-    Content[0].style.visibility = "hidden"
-    Content[2].style.visibility = "hidden"
-    Content[3].style.visibility = "hidden"
+function About() {
+  showSection('About-Content');
 }
 
-function Project(){
-    Content[2].style.visibility = "visible"
-    Content[3].style.visibility = "hidden"
-    Content[1].style.visibility = "hidden"
-    Content[0].style.visibility = "hidden"
+function Project() {
+  showSection('Project-Content');
 }
 
-function Contact(){
-    Content[3].style.visibility = "visible"
-    Content[2].style.visibility = "hidden"
-    Content[1].style.visibility = "hidden"
-    Content[0].style.visibility = "hidden"
+function Contact() {
+  showSection('Contact-Content');
 }

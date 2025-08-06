@@ -6,15 +6,9 @@
     <title>Document</title>
      <link href="./src/css/output.css" rel="stylesheet">
 </head>
-<body>
-    <main class="bg-amber-950 w-screen h-dvh relative">
-        <nav class="fixed flex bottom-0 bg-cyan-300 w-full h-[10%] items-center justify-around z-10">
-            <button class="bg-amber-200" id="Home" onclick="Home()">Home</button>
-            <button class="bg-amber-200" id="About" onclick="About()">but1</button>
-            <button  class="bg-amber-200" id="Project" onclick="Project()">but1</button>
-            <button  class="bg-amber-200" id="Contact" onclick="Contact()">but1</button>
-        </nav>
-
+<body class="overflow-y-scroll">
+    <main class="bg-amber-950 w-screen h-dvh relative min-h-screen ">
+        
         <div id="Home-Content" class="flex justify-center items-center bg-fuchsia-300 w-full h-screen absolute">
             <div class="bg-red-300 w-full h-[80%] justify-center items-center flex flex-col gap-2">
                <img src="images/kuching.jpg" alt="" class="rounded-full">
@@ -23,17 +17,38 @@
             </div>
         </div>
         
-        <div id="About-Content" class="flex justify-center items-center bg-fuchsia-300 w-full h-screen absolute">
-            <h4 class="bg-red-100">This is About</h4>
+        <div id="About-Content" class="flex  items-center bg-fuchsia-300 w-full h-auto  flex-col min-h-screen pt-5 pb-[30%] gap-8  justify-evenly">
+            <h4 class="bg-red-100 top-0 mt-3 text-4xl">This is About</h4>
+            <div class="bg-amber-700 w-[90%] h-[20rem]  justify-evenly flex flex-col items-center">
+                <img src="images/kuching.jpg" alt="" class="rounded-2xl w-[10rem]">
+                <h5 class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veniam laudantium unde sed possimus corporis reiciendis nostrum impedit tempora. Eos unde culpa reprehenderit omnis tempore natus doloremque dolorum numquam quam!</h5>
+            </div>
+            <div class="bg-amber-700 w-[90%] h-[30rem]  flex flex-wrap  z-10 gap-5 ">
+                <div class="bg-blue-200 w-[30%] h-[15%]">1</div>
+            </div>
         </div>
        
-        <div id="Project-Content" class="flex justify-center items-center bg-fuchsia-300 w-full h-screen absolute">
-            <h4>This is Project</h4>
+        <div id="Project-Content" class="flex  items-center bg-fuchsia-300 w-full h-auto  flex-col min-h-screen pt-5 pb-[30%] gap-8  justify-evenly">
+            <h3 class="bg-red-100 top-0 mt-6 text-4xl"> Projects</h3>
+            <div class="bg-blue-600 w-[90%] py-[5rem]">w</div>
+            <div class="bg-blue-600 w-[90%] py-[5rem]">w</div>
+            <div class="bg-blue-600 w-[90%] py-[5rem]">w</div>
+            <div class="bg-blue-600 w-[90%] py-[5rem]">w</div>
+            <div class="bg-blue-600 w-[90%] py-[5rem]">w</div>
         </div>
        
         <div id="Contact-Content" class="flex justify-center items-center bg-fuchsia-300 w-full h-screen absolute">
-            <h4>This is Contact</h4>
+            <div class="bg-red-500 w-[90%] top-0 flex h-[50%] items-start">
+                ef
+            </div>
         </div>
+
+        <nav class="fixed flex bottom-0 bg-cyan-300 w-full h-[10%] items-center justify-around z-50">
+            <button class="bg-amber-200" id="Home" onclick="Home()">Home</button>
+            <button class="bg-amber-200" id="About" onclick="About()">but1</button>
+            <button  class="bg-amber-200" id="Project" onclick="Project()">but1</button>
+            <button  class="bg-amber-200" id="Contact" onclick="Contact()">but1</button>
+        </nav>
     </main>
     <script src="src/js/script.js"></script>
 </body>
