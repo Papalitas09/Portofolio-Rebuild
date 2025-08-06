@@ -7,27 +7,31 @@
      <link href="./src/css/output.css" rel="stylesheet">
 </head>
 <body>
-    <main class="bg-amber-950 w-screen h-dvh">
-        <nav class="fixed flex bottom-0 bg-cyan-300 w-full h-[10%] items-center justify-around">
-            <button class="bg-amber-200" id="Home" onclick="Home()">but1</button>
+    <main class="bg-amber-950 w-screen h-dvh relative">
+        <nav class="fixed flex bottom-0 bg-cyan-300 w-full h-[10%] items-center justify-around z-10">
+            <button class="bg-amber-200" id="Home" onclick="Home()">Home</button>
             <button class="bg-amber-200" id="About" onclick="About()">but1</button>
             <button  class="bg-amber-200" id="Project" onclick="Project()">but1</button>
             <button  class="bg-amber-200" id="Contact" onclick="Contact()">but1</button>
         </nav>
 
-        <div id="Home-Content">
-            <h4>This is home</h4>
+        <div id="Home-Content" class="flex justify-center items-center bg-fuchsia-300 w-full h-screen absolute">
+            <div class="bg-red-300 w-full h-[80%] justify-center items-center flex flex-col gap-2">
+               <img src="images/kuching.jpg" alt="" class="rounded-full">
+                <h2 class="text-3xl text-center">Satria Raja Djuanda </h2>
+                <h2 class="text-xl text-center">I'm a Game Developer and Web Developer </h2>
+            </div>
         </div>
         
-        <div id="About-Content">
-            <h4>This is About</h4>
+        <div id="About-Content" class="flex justify-center items-center bg-fuchsia-300 w-full h-screen absolute">
+            <h4 class="bg-red-100">This is About</h4>
         </div>
        
-        <div id="Project-Content">
+        <div id="Project-Content" class="flex justify-center items-center bg-fuchsia-300 w-full h-screen absolute">
             <h4>This is Project</h4>
         </div>
        
-        <div id="Contact-Content">
+        <div id="Contact-Content" class="flex justify-center items-center bg-fuchsia-300 w-full h-screen absolute">
             <h4>This is Contact</h4>
         </div>
     </main>

@@ -1,22 +1,18 @@
-//Navbar
-const HomeButton = document.getElementById("Home")
-const AboutButton = document.getElementById("About")
-const ProjectButton = document.getElementById("Project")
-const ContactButton = document.getElementById("Contact")
-
-
-let item = 0
+//Navbar buttons
+let Buttons = [
+    document.getElementById("Home"),
+    document.getElementById("About"),
+    document.getElementById("Project"),
+    document.getElementById("Contact")
+]
+//content
 let Content = [
     document.getElementById("Home-Content"),
     document.getElementById("About-Content"),
     document.getElementById("Project-Content"),
     document.getElementById("Contact-Content")
 ]
-//content
-// const HomeContent = document.getElementById("Home-Content")
-// const AboutContent = document.getElementById("About-Content")
-// const ProjectContent = document.getElementById("Project-Content")
-// const ContactContent = document.getElementById("Contact-Content")
+
 Home()
 function Home(){
     Content[0].style.visibility = "visible"
