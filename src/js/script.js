@@ -13,9 +13,9 @@ function showSection(sectionId) {
   }
 }
 // Home()
-// About()
+About()
 // Project();
-Contact();
+// Contact();
 function Home() {
   showSection('Home-Content');
 }
